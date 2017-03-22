@@ -711,6 +711,8 @@ int DLLEXPORT swmm_getLinkResult(int index, int type, double *result)
 		case 6: *result = Link[index].targetSetting; break;
 		// Froude number
 		case 7: *result = Link[index].froude; break;
+	     // change in flow w.r.t. head (ft2/sec)
+		case 8: *result = Link[index].dqdh; break;
 		// Type not available
 		default: return(ERR_API_OUTBOUNDS);
 	}

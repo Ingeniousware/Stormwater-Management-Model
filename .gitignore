@@ -14,3 +14,7 @@
 /Makefile_LINUX_WORKS_openmp.txt
 /target
 *.zip
+*.db
+*.opendb
+*.dll
+*.lib

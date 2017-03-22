@@ -1,0 +1,104 @@
+﻿  climate.c
+  controls.c
+  culvert.c
+  datetime.c
+  dwflow.c
+  dynwave.c
+..\dynwave.c(567): warning C4101: 'yOld': unreferenced local variable
+  error.c
+  exfil.c
+  findroot.c
+  flowrout.c
+  forcmain.c
+  gage.c
+  gwater.c
+..\gwater.c(688): warning C4100: 't': unreferenced formal parameter
+  hash.c
+  hotstart.c
+  iface.c
+  infil.c
+  inflow.c
+  input.c
+  inputrpt.c
+  Compiling...
+  keywords.c
+  kinwave.c
+..\kinwave.c(257): warning C4100: 'p': unreferenced formal parameter
+  landuse.c
+  lid.c
+  lidproc.c
+  link.c
+  massbal.c
+  mathexpr.c
+  mempool.c
+  node.c
+  odesolve.c
+  output.c
+  project.c
+  qualrout.c
+  rain.c
+  rdii.c
+..\rdii.c(692): warning C4477: 'sscanf' : format string '%f' requires an argument of type 'float *', but variadic argument 8 has type 'double *'
+  ..\rdii.c(692): note: consider using '%lf' in the format string
+  report.c
+  roadway.c
+..\roadway.c(24): warning C4091: 'static ': ignored on left of 'RoadSurface' when no variable is declared
+  routing.c
+  runoff.c
+  Compiling...
+  shape.c
+  snow.c
+  stats.c
+  statsrpt.c
+  subcatch.c
+..\subcatch.c(1087): warning C4100: 't': unreferenced formal parameter
+  surfqual.c
+  swmm5.c
+..\swmm5.c(814): warning C4100: 's': unreferenced formal parameter
+  table.c
+  toolkitAPI.c
+..\toolkitAPI.c(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(52): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(69): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(70): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(91): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+..\toolkitAPI.c(92): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+..\toolkitAPI.c(250): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(259): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(261): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(263): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(265): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(267): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(269): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(271): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(279): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(281): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(283): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(285): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(634): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(635): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(636): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(638): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\toolkitAPI.c(770): warning C4101: 'errcode': unreferenced local variable
+..\toolkitAPI.c(770): warning C4101: 'l_type': unreferenced local variable
+  toposort.c
+  transect.c
+  treatmnt.c
+  xsect.c
+     Creating library C:\IWareGitHubII\swmm5\src\VC2010_DLL\Release\swmm5.lib and object C:\IWareGitHubII\swmm5\src\VC2010_DLL\Release\swmm5.exp
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_close@0
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_end@0
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_getError@8
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_getMassBalErr@12
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_getVersion@0
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_getWarnings@0
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_open@12
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_report@0
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_run@12
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_start@4
+swmm5.exp : error LNK2001: unresolved external symbol _swmm_step@4
+C:\IWareGitHubII\swmm5\src\VC2010_DLL\Release\swmm5.dll : fatal error LNK1120: 11 unresolved externals

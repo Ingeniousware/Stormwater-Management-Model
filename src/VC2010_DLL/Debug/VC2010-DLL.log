@@ -1,0 +1,64 @@
+﻿  climate.c
+  controls.c
+  culvert.c
+  datetime.c
+  dwflow.c
+  dynwave.c
+  error.c
+  exfil.c
+  findroot.c
+  flowrout.c
+  forcmain.c
+  gage.c
+  gwater.c
+  hash.c
+  hotstart.c
+  iface.c
+  infil.c
+  inflow.c
+  input.c
+  inputrpt.c
+  Generating Code...
+  Compiling...
+  keywords.c
+  kinwave.c
+  landuse.c
+  lid.c
+  lidproc.c
+  link.c
+  massbal.c
+  mathexpr.c
+  mempool.c
+  node.c
+  odesolve.c
+  output.c
+  project.c
+  qualrout.c
+  rain.c
+  rdii.c
+..\rdii.c(692): warning C4477: 'sscanf' : format string '%f' requires an argument of type 'float *', but variadic argument 8 has type 'double *'
+  ..\rdii.c(692): note: consider using '%lf' in the format string
+  report.c
+  roadway.c
+..\roadway.c(24): warning C4091: 'static ': ignored on left of 'RoadSurface' when no variable is declared
+  routing.c
+  runoff.c
+  Generating Code...
+  Compiling...
+  shape.c
+  snow.c
+  stats.c
+  statsrpt.c
+  subcatch.c
+  surfqual.c
+  swmm5.c
+  table.c
+  toolkitAPI.c
+  toposort.c
+  transect.c
+  treatmnt.c
+  xsect.c
+  Generating Code...
+     Creating library C:\IWareGitHubII\swmm5\Debug\swmm5Toolkit.lib and object C:\IWareGitHubII\swmm5\Debug\swmm5Toolkit.exp
+  VC2010-DLL.vcxproj -> C:\IWareGitHubII\swmm5\Debug\swmm5Toolkit.dll
+  VC2010-DLL.vcxproj -> C:\IWareGitHubII\swmm5\Debug\swmm5Toolkit.pdb (Full PDB)
