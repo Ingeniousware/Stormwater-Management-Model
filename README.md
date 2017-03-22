@@ -11,4 +11,4 @@ SWMM is a dynamic hydrology-hydraulic water quality simulation model. It is used
 
 This code respository has been forked from the SWMM source code repository maintained by the Open Water Analytics group.
 
-For support regarding this code or further extensions do not hesitate in contacting us:  contact@ingeniousware.net   
+For support regarding this code or any further extensions do not hesitate in contacting us:  contact@ingeniousware.net   
