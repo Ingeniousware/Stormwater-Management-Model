@@ -866,7 +866,7 @@ int DLLEXPORT swmm_setXSectParam(int index, int Param, double value)
 	case 0:
 
 		//check if the section type have a diameter in its parameters
-		if (Link[index].xsect.type != 1) return(ERR_API_OUTBOUNDS);
+		if (Link[index].xsect.type != 1) return(ERR_API_PARAMNOTFOUNDXSECT);
 
 		//circular section
 		p[0] = value;
@@ -876,5 +876,41 @@ int DLLEXPORT swmm_setXSectParam(int index, int Param, double value)
 	default: return(ERR_API_OUTBOUNDS);
 	}
 	
+	return(0);
+}
+
+int DLLEXPORT swmm_getXSectParam(int index, int Param, double* result)
+//
+// Input: 	index = Index of desired ID
+//			param = Parameter desired
+//			value = value to be input
+// Output: 	returns API Error
+// Purpose: sets XSect Parameter
+{
+	// Check if Open
+	if (swmm_IsOpenFlag() == FALSE) return(ERR_API_INPUTNOTOPEN);
+
+	
+	// Check if object index is within bounds
+	if (index < 0 || index >= Nobjects[LINK]) return(ERR_API_OUTBOUNDS);
+
+	*result = -1;
+	
+	switch (Param)
+	{
+		// diameter
+	case 0:
+
+		//check if the section type have a diameter in its parameters
+		if (Link[index].xsect.type != 1) return(ERR_API_PARAMNOTFOUNDXSECT);
+
+		//circular section
+		*result = Link[index].xsect.yFull * UCF(LENGTH);
+		
+		break;
+
+	default: return(ERR_API_OUTBOUNDS);
+	}
+
 	return(0);
 }
