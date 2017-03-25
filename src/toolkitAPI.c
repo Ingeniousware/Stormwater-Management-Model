@@ -840,3 +840,41 @@ int DLLEXPORT swmm_setNodeInflow(int index, double flowrate)
 	return(0);
 }
 
+int DLLEXPORT swmm_setXSectParam(int index, int Param, double value)
+//
+// Input: 	index = Index of desired ID
+//			param = Parameter desired
+//			value = value to be input
+// Output: 	returns API Error
+// Purpose: sets XSect Parameter
+{
+	// Check if Open
+	if (swmm_IsOpenFlag() == FALSE) return(ERR_API_INPUTNOTOPEN);
+
+	// Check if Simulation is Running
+	if (swmm_IsStartedFlag() == TRUE) return(ERR_API_SIM_NRUNNING);
+
+	// Check if object index is within bounds
+	if (index < 0 || index >= Nobjects[LINK]) return(ERR_API_OUTBOUNDS);
+
+
+	double p[2];
+
+	switch (Param)
+	{
+		// diameter
+	case 0:
+
+		//check if the section type have a diameter in its parameters
+		if (Link[index].xsect.type != 1) return(ERR_API_OUTBOUNDS);
+
+		//circular section
+		p[0] = value;
+		xsect_setParams(&Link[index].xsect, Link[index].xsect.type, p, UCF(LENGTH));
+		break;
+
+	default: return(ERR_API_OUTBOUNDS);
+	}
+	
+	return(0);
+}

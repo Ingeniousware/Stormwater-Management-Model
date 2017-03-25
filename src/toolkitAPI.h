@@ -30,32 +30,44 @@ extern "C" {
 #define _CRT_SECURE_NO_DEPRECATE
 
 // Input API Exportable Functions
-int DLLEXPORT  swmm_getSimulationUnit(int type, int *value);
-int DLLEXPORT  swmm_getSimulationAnalysisSetting(int type, int *value);
-int DLLEXPORT  swmm_getSimulationParam(int type, double *value);
+
+//Simulations
+	int DLLEXPORT  swmm_getSimulationDateTime(int timetype, char *dtimestr);
+	int DLLEXPORT  swmm_setSimulationDateTime(int timetype, char *dtimestr);
+	int DLLEXPORT  swmm_getSimulationUnit(int type, int *value);
+	int DLLEXPORT  swmm_getSimulationAnalysisSetting(int type, int *value);
+	int DLLEXPORT  swmm_getSimulationParam(int type, double *value);
+
 
 int DLLEXPORT  swmm_countObjects(int type, int *count);
 int DLLEXPORT  swmm_getObjectId(int type, int index, char *id);
 
-int DLLEXPORT  swmm_getNodeType(int index, int *Ntype);
-int DLLEXPORT  swmm_getLinkType(int index, int *Ltype);
-
-int DLLEXPORT  swmm_getLinkConnections(int index, int *Node1, int *Node2);
-int DLLEXPORT  swmm_getSubcatchOutConnection(int index, int *type, int *Index );
 
 //Nodes
+int DLLEXPORT  swmm_getNodeType(int index, int *Ntype);
 int DLLEXPORT  swmm_getNodeParam(int index, int Param, double *value);
 int DLLEXPORT  swmm_setNodeParam(int index, int Param, double value);
-//Links
+
+//Links getters
+int DLLEXPORT  swmm_getLinkType(int index, int *Ltype);
+int DLLEXPORT  swmm_getLinkConnections(int index, int *Node1, int *Node2);
 int DLLEXPORT  swmm_getLinkParam(int index, int Param, double *value);
-int DLLEXPORT  swmm_setLinkParam(int index, int Param, double value);
 int DLLEXPORT  swmm_getLinkDirection(int index, signed char *value);
+
+//Links setters
+int DLLEXPORT  swmm_setLinkParam(int index, int Param, double value);
+
+
+//XSections setters
+int DLLEXPORT swmm_setXSectParam(int index, int Param, double *value);
+
+
 //Subcatchments
 int DLLEXPORT  swmm_getSubcatchParam(int index, int Param, double *value);
 int DLLEXPORT  swmm_setSubcatchParam(int index, int Param, double value);
-// 
-int DLLEXPORT  swmm_getSimulationDateTime(int timetype, char *dtimestr);
-int DLLEXPORT  swmm_setSimulationDateTime(int timetype, char *dtimestr);
+int DLLEXPORT  swmm_getSubcatchOutConnection(int index, int *type, int *Index);
+
+
 
 //-------------------------------
 // Active Simulation Results API
